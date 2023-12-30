@@ -1,0 +1,70 @@
+[
+    {
+        "id": "f0c6b58f-4d8a-4b8c-8d2a-12b4834e0a98",
+        "nombreReal": "Juan Martínez",
+        "apodo": "TeleMente",
+        "descripcion": "Después de un accidente en un laboratorio de neurociencia, Juan adquirió la capacidad de leer y manipular pensamientos.",
+        "edad": 32,
+        "poderes": [
+            "Telepatía"
+        ],
+        "imagen": "telemente"
+    },
+    {
+        "id": "a07c5e7b-a2b3-4a0e-9e2c-29f2d7b4d078",
+        "nombreReal": "Laura Blanco",
+        "apodo": "Ala de Águila",
+        "descripcion": "Laura siempre soñó con volar. Un encuentro con un águila mística le otorgó el don del vuelo.",
+        "edad": 28,
+        "poderes": [
+            "Vuelo"
+        ],
+        "imagen": "alaDeAguila"
+    },
+    {
+        "id": "b627f3c3-3f8a-41a1-9c81-2f4255b5f1fc",
+        "nombreReal": "Miguel Torres",
+        "apodo": "Roca",
+        "descripcion": "Miguel puede levantar objetos de toneladas sin esfuerzo gracias a una maldición de un dios olvidado.",
+        "edad": 35,
+        "poderes": [
+            "Super Fuerza"
+        ],
+        "imagen": "roca"
+    },
+    {
+        "id": "d75f3c93-2d5a-4a1e-8f1c-3e5d6c1e0b79",
+        "nombreReal": "Elena García",
+        "apodo": "Sombra",
+        "descripcion": "Elena descubrió su habilidad para volverse invisible después de un misterioso encuentro en un bosque encantado. Ahora, utiliza su poder para operar en secreto y proteger a los inocentes.",
+        "edad": 29,
+        "poderes": [
+            "Invisibilidad",
+            "Teletransportación"
+        ],
+        "imagen": "sombra"
+    },
+    {
+        "id": "e62d4c7b-9c5a-4d3e-8a3c-2f9d5e5d1a86",
+        "nombreReal": "Daniel Ortiz",
+        "apodo": "Cronos",
+        "descripcion": "Daniel puede alterar y viajar en el tiempo después de encontrar un antiguo reloj en una excavación arqueológica. Con este poder, busca corregir errores del pasado y asegurar un futuro mejor.",
+        "edad": 34,
+        "poderes": [
+            "Manipulación del Tiempo"
+        ],
+        "imagen": "cronos"
+    },
+    {
+        "id": "f23d5e7a-2b4c-4a9d-9e3d-2d5e6f7e0g89",
+        "nombreReal": "Isabel Ruiz",
+        "apodo": "Elementa",
+        "descripcion": "Isabel puede controlar y manipular los elementos naturales. Un ritual ancestral le otorgó el don de dominar fuego, agua, tierra y aire a su antojo.",
+        "edad": 27,
+        "poderes": [
+            "Control Elemental",
+            "Telepatía"
+        ],
+        "imagen": "elementa"
+    }
+]
