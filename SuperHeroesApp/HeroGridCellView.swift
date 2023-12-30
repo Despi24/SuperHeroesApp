@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct HeroGridCellView: View {
+    let hero: HeroModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image(hero.imagen)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100)
+            .clipShape(RoundedRectangle(cornerRadius: 30))
+            Text(hero.apodo)
+        }
     }
 }
 
 #Preview {
-    HeroGridCellView()
+    HeroGridCellView(hero: .test)
 }

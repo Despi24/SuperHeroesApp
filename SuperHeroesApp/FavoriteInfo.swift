@@ -9,7 +9,17 @@ import SwiftUI
 
 struct FavoriteInfo: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack (spacing: 10) {
+            Text("Marcado como Favorito")
+                .font(.footnote)
+            Image(systemName: "star")
+                .symbolVariant(.fill)
+                .foregroundStyle(.yellow)
+                .padding(.leading, 0)
+        }
+        .frame(maxWidth: .infinity)
+        .padding()
+        .recuadroGrisaceo
     }
 }
 

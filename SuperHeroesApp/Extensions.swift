@@ -5,4 +5,10 @@
 //  Created by Alex Peinado Llopis on 10/11/23.
 //
 
-import Foundation
+import SwiftUI
+
+extension View {
+    var recuadroGrisaceo: some View {
+        modifier(RecuadroGrisaceo())
+    }
+}

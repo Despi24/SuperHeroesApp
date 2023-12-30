@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct HeroesView: View {
+    @EnvironmentObject var heroesVM: HeroesVM
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        switch heroesVM.heroesViewType {
+        case .list:
+            HeroesListView()
+        case .grid:
+            HeroesGridView()
+        }
     }
 }
 
 #Preview {
     HeroesView()
+        .environmentObject(HeroesVM(heroInteractor: TestHeroesInteractor()))
 }

@@ -7,16 +7,37 @@
 
 import SwiftUI
 
-struct HeroeCell: View {
-    let hero: Hero
+struct HeroCellView: View {
+    let hero: HeroModel
     
     var body: some View {
-        VStack {
-            Text(hero.apodo)
+        HStack {
+            Image(hero.imagen)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 80)
+                .clipShape(Circle())
+                .padding(.trailing)
+            VStack(alignment: .leading) {
+                Text(hero.apodo)
+                    .font(.title2)
+                ForEach(hero.poderes) { poder in
+                    Text("\(poder.rawValue)")
+                }
+                .font(.subheadline)
+            }
+            if hero.isFavorite {
+                Spacer()
+                Image(systemName: "star")
+                    .symbolVariant(.fill)
+                    .foregroundStyle(.yellow)
+                    .padding(.leading, 30)
+            }
         }
     }
 }
 
-//#Preview {
-//    HeroCell(hero: hero)
-//}
+
+#Preview {
+    HeroCellView(hero: .test)
+}

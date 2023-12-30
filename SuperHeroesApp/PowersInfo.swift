@@ -7,29 +7,33 @@
 
 import SwiftUI
 
-struct CardInfo: View {
-    let title: String
-    let description: String
+struct PowersInfo: View {
+    let hero: HeroModel
+    let poder: Poderes
+    
     
     var body: some View {
         HStack(spacing: 40) {
             VStack(alignment: .leading) {
-                Text(title)
-                    .font(.footnote)
-                    .bold()
-                Text(description)
-                    .font(.title3)
+                if hero.poderes.count > 1 {
+                    Text("Poderes")
+                        .font(.callout)
+                } else {
+                    Text("Poder")
+                        .font(.footnote)
+                        .bold()
+                }
+                ForEach(hero.poderes) { poder in
+                    Text("- \(poder.rawValue)")
+                }
             }
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .padding()
-        .background {
-            RoundedRectangle(cornerRadius: 10)
-                .fill(.linearGradient(colors: [.gray.opacity(0.2), .gray.opacity(0.6)], startPoint: .top, endPoint: .bottom))
-                .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 10)
-        }
+        .recuadroGrisaceo
     }
 }
 
 #Preview {
-    CardInfo(title: "Poder", description: "descripcion")
+    PowersInfo(hero: .test, poder: .controlVibraciones)
 }

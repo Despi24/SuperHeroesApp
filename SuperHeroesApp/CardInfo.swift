@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct CardInfo: View {
+    let title: String
+    let description: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 40) {
+            VStack(alignment: .leading) {
+                Text(title)
+                    .font(.footnote)
+                    .bold()
+                Text(description)
+                    .font(.callout)
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .padding()
+        .recuadroGrisaceo
     }
 }
 
 #Preview {
-    CardInfo()
+    CardInfo(title: "Poder", description: "descripcion")
 }

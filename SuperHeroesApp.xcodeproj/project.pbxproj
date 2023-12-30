@@ -7,18 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2607D82B079A30006868EC /* FavoriteInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2607D72B079A30006868EC /* FavoriteInfo.swift */; };
+		CC5ECD972AF92E29008344F3 /* HeroCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5ECD962AF92E29008344F3 /* HeroCellView.swift */; };
+		CC6B4F252AF95220006197B8 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6B4F242AF95220006197B8 /* Test.swift */; };
+		CC965D972AFA9A600053562C /* HeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC965D962AFA9A600053562C /* HeroDetailView.swift */; };
+		CCB559662AFD07C300089670 /* CardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB559652AFD07C300089670 /* CardInfo.swift */; };
+		CCB559682AFD352200089670 /* HeroesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB559672AFD352200089670 /* HeroesTabView.swift */; };
+		CCB5596A2AFD378800089670 /* HeroesGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB559692AFD378800089670 /* HeroesGridView.swift */; };
+		CCB5596C2AFD43EF00089670 /* HeroGridCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5596B2AFD43EF00089670 /* HeroGridCellView.swift */; };
+		CCB5EA782AFE4E4B00018C0D /* PowersInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EA772AFE4E4B00018C0D /* PowersInfo.swift */; };
+		CCB5EA7B2AFE542800018C0D /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EA7A2AFE542800018C0D /* Modifiers.swift */; };
+		CCB5EA7D2AFE570A00018C0D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EA7C2AFE570A00018C0D /* Extensions.swift */; };
+		CCB5EA7F2AFE72E400018C0D /* HeroesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EA7E2AFE72E400018C0D /* HeroesView.swift */; };
+		CCB5EA812AFE7B5100018C0D /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EA802AFE7B5100018C0D /* ExampleView.swift */; };
+		CCB5EA852AFE7E2600018C0D /* HeroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB5EA842AFE7E2600018C0D /* HeroInteractor.swift */; };
 		CCBC16B62AF6B4BB00D07539 /* SuperHeroesAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC16B52AF6B4BB00D07539 /* SuperHeroesAppApp.swift */; };
-		CCBC16B82AF6B4BB00D07539 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC16B72AF6B4BB00D07539 /* ContentView.swift */; };
+		CCBC16B82AF6B4BB00D07539 /* HeroesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC16B72AF6B4BB00D07539 /* HeroesListView.swift */; };
 		CCBC16BA2AF6B4BC00D07539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBC16B92AF6B4BC00D07539 /* Assets.xcassets */; };
 		CCBC16BD2AF6B4BC00D07539 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCBC16BC2AF6B4BC00D07539 /* Preview Assets.xcassets */; };
+		CCBC16C52AF6B4F600D07539 /* SuperHeroes.json in Resources */ = {isa = PBXBuildFile; fileRef = CCBC16C42AF6B4F600D07539 /* SuperHeroes.json */; };
+		CCBC16C82AF6B56200D07539 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC16C72AF6B56200D07539 /* Hero.swift */; };
+		CCBC16CC2AF6B83B00D07539 /* HeroesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC16CB2AF6B83B00D07539 /* HeroesVM.swift */; };
+		CCE4048F2B063E3300CA7712 /* HeroesTest.json in Resources */ = {isa = PBXBuildFile; fileRef = CCE4048E2B063E3300CA7712 /* HeroesTest.json */; };
+		CCE404912B06801400CA7712 /* FavoriteHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE404902B06801400CA7712 /* FavoriteHeroes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC2607D72B079A30006868EC /* FavoriteInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteInfo.swift; sourceTree = "<group>"; };
+		CC5ECD962AF92E29008344F3 /* HeroCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellView.swift; sourceTree = "<group>"; };
+		CC6B4F242AF95220006197B8 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		CC965D962AFA9A600053562C /* HeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailView.swift; sourceTree = "<group>"; };
+		CCB559652AFD07C300089670 /* CardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfo.swift; sourceTree = "<group>"; };
+		CCB559672AFD352200089670 /* HeroesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesTabView.swift; sourceTree = "<group>"; };
+		CCB559692AFD378800089670 /* HeroesGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesGridView.swift; sourceTree = "<group>"; };
+		CCB5596B2AFD43EF00089670 /* HeroGridCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroGridCellView.swift; sourceTree = "<group>"; };
+		CCB5EA772AFE4E4B00018C0D /* PowersInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PowersInfo.swift; sourceTree = "<group>"; };
+		CCB5EA7A2AFE542800018C0D /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		CCB5EA7C2AFE570A00018C0D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CCB5EA7E2AFE72E400018C0D /* HeroesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesView.swift; sourceTree = "<group>"; };
+		CCB5EA802AFE7B5100018C0D /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		CCB5EA842AFE7E2600018C0D /* HeroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroInteractor.swift; sourceTree = "<group>"; };
 		CCBC16B22AF6B4BB00D07539 /* SuperHeroesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCBC16B52AF6B4BB00D07539 /* SuperHeroesAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroesAppApp.swift; sourceTree = "<group>"; };
-		CCBC16B72AF6B4BB00D07539 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CCBC16B72AF6B4BB00D07539 /* HeroesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListView.swift; sourceTree = "<group>"; };
 		CCBC16B92AF6B4BC00D07539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCBC16BC2AF6B4BC00D07539 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCBC16C42AF6B4F600D07539 /* SuperHeroes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SuperHeroes.json; sourceTree = "<group>"; };
+		CCBC16C72AF6B56200D07539 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		CCBC16CB2AF6B83B00D07539 /* HeroesVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesVM.swift; sourceTree = "<group>"; };
+		CCE4048E2B063E3300CA7712 /* HeroesTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HeroesTest.json; sourceTree = "<group>"; };
+		CCE404902B06801400CA7712 /* FavoriteHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHeroes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +70,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CCB5EA792AFE53FC00018C0D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CCB5EA7C2AFE570A00018C0D /* Extensions.swift */,
+				CCB5EA7A2AFE542800018C0D /* Modifiers.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		CCB5EA822AFE7D8500018C0D /* System */ = {
+			isa = PBXGroup;
+			children = (
+				CCBC16B52AF6B4BB00D07539 /* SuperHeroesAppApp.swift */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		CCB5EA832AFE7DEA00018C0D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCB5EA842AFE7E2600018C0D /* HeroInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
 		CCBC16A92AF6B4BB00D07539 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +114,13 @@
 		CCBC16B42AF6B4BB00D07539 /* SuperHeroesApp */ = {
 			isa = PBXGroup;
 			children = (
-				CCBC16B52AF6B4BB00D07539 /* SuperHeroesAppApp.swift */,
-				CCBC16B72AF6B4BB00D07539 /* ContentView.swift */,
+				CCB5EA822AFE7D8500018C0D /* System */,
+				CCB5EA792AFE53FC00018C0D /* Helpers */,
+				CCBC16CD2AF6BCEB00D07539 /* Views */,
+				CCBC16CA2AF6B80700D07539 /* ViewModel */,
+				CCB5EA832AFE7DEA00018C0D /* Interactor */,
+				CCBC16C62AF6B53800D07539 /* Model */,
+				CCBC16C32AF6B4E400D07539 /* Resources */,
 				CCBC16B92AF6B4BC00D07539 /* Assets.xcassets */,
 				CCBC16BB2AF6B4BC00D07539 /* Preview Content */,
 			);
@@ -62,9 +130,54 @@
 		CCBC16BB2AF6B4BC00D07539 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				CCE4048E2B063E3300CA7712 /* HeroesTest.json */,
 				CCBC16BC2AF6B4BC00D07539 /* Preview Assets.xcassets */,
+				CC6B4F242AF95220006197B8 /* Test.swift */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CCBC16C32AF6B4E400D07539 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCBC16C42AF6B4F600D07539 /* SuperHeroes.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CCBC16C62AF6B53800D07539 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCBC16C72AF6B56200D07539 /* Hero.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCBC16CA2AF6B80700D07539 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCBC16CB2AF6B83B00D07539 /* HeroesVM.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CCBC16CD2AF6BCEB00D07539 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCB5EA7E2AFE72E400018C0D /* HeroesView.swift */,
+				CCE404902B06801400CA7712 /* FavoriteHeroes.swift */,
+				CCB5EA802AFE7B5100018C0D /* ExampleView.swift */,
+				CCB559672AFD352200089670 /* HeroesTabView.swift */,
+				CCB559692AFD378800089670 /* HeroesGridView.swift */,
+				CCB5596B2AFD43EF00089670 /* HeroGridCellView.swift */,
+				CCBC16B72AF6B4BB00D07539 /* HeroesListView.swift */,
+				CC5ECD962AF92E29008344F3 /* HeroCellView.swift */,
+				CC965D962AFA9A600053562C /* HeroDetailView.swift */,
+				CCB559652AFD07C300089670 /* CardInfo.swift */,
+				CCB5EA772AFE4E4B00018C0D /* PowersInfo.swift */,
+				CC2607D72B079A30006868EC /* FavoriteInfo.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCBC16C52AF6B4F600D07539 /* SuperHeroes.json in Resources */,
+				CCE4048F2B063E3300CA7712 /* HeroesTest.json in Resources */,
 				CCBC16BD2AF6B4BC00D07539 /* Preview Assets.xcassets in Resources */,
 				CCBC16BA2AF6B4BC00D07539 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +252,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCBC16B82AF6B4BB00D07539 /* ContentView.swift in Sources */,
+				CCB5596C2AFD43EF00089670 /* HeroGridCellView.swift in Sources */,
+				CC5ECD972AF92E29008344F3 /* HeroCellView.swift in Sources */,
+				CCB559682AFD352200089670 /* HeroesTabView.swift in Sources */,
+				CCB5EA812AFE7B5100018C0D /* ExampleView.swift in Sources */,
+				CCB5EA852AFE7E2600018C0D /* HeroInteractor.swift in Sources */,
+				CCBC16CC2AF6B83B00D07539 /* HeroesVM.swift in Sources */,
+				CC965D972AFA9A600053562C /* HeroDetailView.swift in Sources */,
+				CCB5596A2AFD378800089670 /* HeroesGridView.swift in Sources */,
+				CCB5EA7F2AFE72E400018C0D /* HeroesView.swift in Sources */,
+				CCBC16C82AF6B56200D07539 /* Hero.swift in Sources */,
+				CC2607D82B079A30006868EC /* FavoriteInfo.swift in Sources */,
+				CCBC16B82AF6B4BB00D07539 /* HeroesListView.swift in Sources */,
+				CCE404912B06801400CA7712 /* FavoriteHeroes.swift in Sources */,
 				CCBC16B62AF6B4BB00D07539 /* SuperHeroesAppApp.swift in Sources */,
+				CC6B4F252AF95220006197B8 /* Test.swift in Sources */,
+				CCB559662AFD07C300089670 /* CardInfo.swift in Sources */,
+				CCB5EA782AFE4E4B00018C0D /* PowersInfo.swift in Sources */,
+				CCB5EA7B2AFE542800018C0D /* Modifiers.swift in Sources */,
+				CCB5EA7D2AFE570A00018C0D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

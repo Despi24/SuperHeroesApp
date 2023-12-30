@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct HeroesTabView: View {
+    @EnvironmentObject var heroesVM: HeroesVM
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            HeroesView()
+                .tabItem {
+                    Label("List", systemImage: "list.bullet")
+                }
+                .tag(1)
+            FavoriteHeroes()
+                .tabItem {
+                    Label("Favorites", systemImage: "star")
+                }
+                .tag(2)
+        }
+        .alert("Algo ha ido mal", isPresented: $heroesVM.showError) {
+            
+        } message: {
+            Text(heroesVM.errorMsg)
+        }
+
     }
 }
 
 #Preview {
     HeroesTabView()
+        .environmentObject(HeroesVM(heroInteractor: TestHeroesInteractor()))
 }

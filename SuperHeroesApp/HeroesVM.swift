@@ -7,22 +7,57 @@
 
 import Foundation
 
-final class HeroVM {
-    var heroes: [Hero] = []
+enum HeroesViewType {
+    case list
+    case grid
+}
+
+final class HeroesVM: ObservableObject {
+    let heroInteractor: Interactor
+    @Published var heroesViewType: HeroesViewType = .list
     
-    init() {
-        do {
-            heroes = try getHeroes()
-            print(heroes)
-        } catch {
-            print(error)
+    @Published var errorMsg = ""
+    @Published var showError = false
+    
+    @Published var heroes: [HeroModel] {
+        didSet {
+            do {
+                try heroInteractor.saveHeroes(heroes: heroes)
+            } catch {
+                errorMsg = error.localizedDescription
+                showError.toggle()
+            }
         }
     }
     
+    var favoriteHeroes: [HeroModel] {
+        heroes.filter { $0.isFavorite }
+    }
     
-    func getHeroes() throws -> [Hero] {
-        guard let url = Bundle.main.url(forResource: "SuperHeroes", withExtension: "json") else { return [] }
-        let data = try Data(contentsOf: url)
-        return try JSONDecoder().decode([Hero].self, from: data)
+    init(heroInteractor: Interactor = HeroesInteractor()) {
+        self.heroInteractor = heroInteractor
+        do {
+            heroes = try heroInteractor.getHeroes()
+        } catch {
+            errorMsg = error.localizedDescription
+            heroes = []
+            showError.toggle()
+        }
+    }
+    
+    func deleteHero(selectedHero: HeroModel) -> Void {
+        //Forma 1
+//        if let index = heroes.firstIndex(where: { $0.id == selectedHero.id }) {
+//            heroes.remove(at: index)
+//       }
+        //Forma 2
+        heroes.removeAll(where: { $0.id == selectedHero.id })
+    }
+    
+    func addFavorite(selectedHero: HeroModel) {
+        if let index = heroes.firstIndex(where: { $0.id == selectedHero.id }) {
+           heroes[index].isFavorite.toggle()
+       }
     }
 }
+
